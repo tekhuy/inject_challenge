@@ -1,8 +1,13 @@
 class Array
 
-  def my_inject&block
-    puts block
-    self.each {|item| p item }
+  #{|memo, item| memo - item}
+
+  def my_inject 
+    copy = self.dup
+    copy.each do |item|
+      yield memo,item
+      p item
+    end
   end
 
 
