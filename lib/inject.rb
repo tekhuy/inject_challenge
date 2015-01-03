@@ -1,7 +1,11 @@
 class Array
 
   def my_inject 
-    10
+    copy = self.dup
+    copy.each do |item|
+      yield
+      p item
+    end
   end
 
 
