@@ -9,15 +9,15 @@ describe Array do
       expect([1,2,3,4].my_inject{|memo, item| memo + item}).to eq 10 
     end
 
-    # it 'can minus numbers' do
-    #   expect([1,2,3,4].inject{|memo, item| memo - item}).to eq -8
-    #   expect([1,2,3,4].my_inject{|memo, item| memo - item}).to eq -8
-    # end
+    it 'can minus numbers' do
+      expect([1,2,3,4].inject{|memo, item| memo - item}).to eq -8
+      expect([1,2,3,4].my_inject{|memo, item| memo - item}).to eq -8
+    end
 
-    #  it 'can multiply numbers' do
-    #   expect([1,2,3,4].inject{|memo, item| memo * item}).to eq 24
-    #   expect([1,2,3,4].my_inject{|memo, item| memo * item}).to eq 24
-    # end
+     it 'can multiply numbers' do
+      expect([1,2,3,4].inject{|memo, item| memo * item}).to eq 24
+      expect([1,2,3,4].my_inject{|memo, item| memo * item}).to eq 24
+    end
     
   end
 
