@@ -1,11 +1,13 @@
 class Array
 
-  def my_inject 
-    copy = self.dup
-    copy.each do |item|
-      yield
-      p item
+  def my_inject(&block)
+    block.call(self)
+    memo = self.shift 
+    (self.count).times do
+    item = self.shift 
+    memo = memo + item
     end
+    return memo
   end
 
 
