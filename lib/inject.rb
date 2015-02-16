@@ -1,3 +1,5 @@
+require 'byebug'
+
 class Array
 
   def my_inject(&block)
